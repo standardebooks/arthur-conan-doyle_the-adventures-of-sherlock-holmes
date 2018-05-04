@@ -83,20 +83,20 @@
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
-		<item href="text/a-scandal-in-bohemia.xhtml" id="a-scandal-in-bohemia.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-redheaded-league.xhtml" id="the-redheaded-league.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/a-case-of-identity.xhtml" id="a-case-of-identity.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/a-scandal-in-bohemia.xhtml" id="a-scandal-in-bohemia.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/the-adventure-of-the-beryl-coronet.xhtml" id="the-adventure-of-the-beryl-coronet.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-blue-carbuncle.xhtml" id="the-adventure-of-the-blue-carbuncle.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-copper-beeches.xhtml" id="the-adventure-of-the-copper-beeches.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-engineers-thumb.xhtml" id="the-adventure-of-the-engineers-thumb.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-noble-bachelor.xhtml" id="the-adventure-of-the-noble-bachelor.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-speckled-band.xhtml" id="the-adventure-of-the-speckled-band.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-boscombe-valley-mystery.xhtml" id="the-boscombe-valley-mystery.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-five-orange-pips.xhtml" id="the-five-orange-pips.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-man-with-the-twisted-lip.xhtml" id="the-man-with-the-twisted-lip.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-blue-carbuncle.xhtml" id="the-adventure-of-the-blue-carbuncle.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-speckled-band.xhtml" id="the-adventure-of-the-speckled-band.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-engineers-thumb.xhtml" id="the-adventure-of-the-engineers-thumb.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-noble-bachelor.xhtml" id="the-adventure-of-the-noble-bachelor.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-beryl-coronet.xhtml" id="the-adventure-of-the-beryl-coronet.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-adventure-of-the-copper-beeches.xhtml" id="the-adventure-of-the-copper-beeches.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
-		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/the-redheaded-league.xhtml" id="the-redheaded-league.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
 	</manifest>
@@ -118,5 +118,4 @@
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
-
 </package>
