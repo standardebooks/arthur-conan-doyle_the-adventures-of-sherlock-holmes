@@ -45,31 +45,30 @@
 		<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/1661</dc:source>
-		<meta property="se:production-notes">Any special notes about the production of this ebook for future editors/producers? Remove this element if not.</meta>
 		<meta property="se:word-count">WORDCOUNT</meta>
 		<meta property="se:reading-ease.flesch">READINGEASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/The_Adventures_of_Sherlock_Holmes</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes</meta>
 		<dc:creator id="author">Arthur Conan Doyle</dc:creator>
-		<meta property="file-as" refines="#author">AUTHORSORT</meta>
-		<meta property="se:name.person.full-name" refines="#author">AUTHORFULLNAME</meta>
+		<meta property="file-as" refines="#author">Doyle, Arthur Conan</meta>
+		<meta property="se:name.person.full-name" refines="#author">Arthur Ignatius Conan Doyle</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Arthur_Conan_Doyle</meta>
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n79082292</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<dc:contributor id="artist">COVERARTIST</dc:contributor>
-		<meta property="file-as" refines="#artist">COVERARTISTSORT</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVERARTISTWIKILINK</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">COVERARTISTNACOAFLINK</meta>
+		<dc:contributor id="artist">Thomas Eakins</dc:contributor>
+		<meta property="file-as" refines="#artist">Eakins, Thomas</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Thomas_Eakins</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n80061185</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="transcriber-1">an anonymous Project Gutenberg volunteer</dc:contributor>
-		<meta property="file-as" refines="#transcriber-1">TRANSCRIBERSORT</meta>
+		<dc:contributor id="transcriber-1">An Anonymous Volunteer</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Anonymous Volunteer</meta>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
 		<dc:contributor id="transcriber-2">Jose Menendez</dc:contributor>
-		<meta property="file-as" refines="#transcriber-2">TRANSCRIBERSORT</meta>
+		<meta property="file-as" refines="#transcriber-2">Menendez, Jose</meta>
 		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
-		<dc:contributor id="producer-1">PRODUCER</dc:contributor>
-		<meta property="file-as" refines="#producer-1">PRODUCERSORT</meta>
-		<meta property="se:url.homepage" refines="#producer-1">LINK</meta>
+		<dc:contributor id="producer-1">David Grigg</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Grigg, David</meta>
+		<meta property="se:url.homepage" refines="#producer-1">https://rightword.com.au/david.php</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
@@ -84,6 +83,18 @@
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/a-scandal-in-bohemia.xhtml" id="a-scandal-in-bohemia.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-redheaded-league.xhtml" id="the-redheaded-league.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/a-case-of-identity.xhtml" id="a-case-of-identity.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-boscombe-valley-mystery.xhtml" id="the-boscombe-valley-mystery.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-five-orange-pips.xhtml" id="the-five-orange-pips.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-man-with-the-twisted-lip.xhtml" id="the-man-with-the-twisted-lip.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-blue-carbuncle.xhtml" id="the-adventure-of-the-blue-carbuncle.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-speckled-band.xhtml" id="the-adventure-of-the-speckled-band.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-engineers-thumb.xhtml" id="the-adventure-of-the-engineers-thumb.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-noble-bachelor.xhtml" id="the-adventure-of-the-noble-bachelor.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-beryl-coronet.xhtml" id="the-adventure-of-the-beryl-coronet.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-adventure-of-the-copper-beeches.xhtml" id="the-adventure-of-the-copper-beeches.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
@@ -92,7 +103,20 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
+		<itemref idref="a-scandal-in-bohemia.xhtml"/>
+		<itemref idref="the-redheaded-league.xhtml"/>
+		<itemref idref="a-case-of-identity.xhtml"/>
+		<itemref idref="the-boscombe-valley-mystery.xhtml"/>
+		<itemref idref="the-five-orange-pips.xhtml"/>
+		<itemref idref="the-man-with-the-twisted-lip.xhtml"/>
+		<itemref idref="the-adventure-of-the-blue-carbuncle.xhtml"/>
+		<itemref idref="the-adventure-of-the-speckled-band.xhtml"/>
+		<itemref idref="the-adventure-of-the-engineers-thumb.xhtml"/>
+		<itemref idref="the-adventure-of-the-noble-bachelor.xhtml"/>
+		<itemref idref="the-adventure-of-the-beryl-coronet.xhtml"/>
+		<itemref idref="the-adventure-of-the-copper-beeches.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
+
 </package>
