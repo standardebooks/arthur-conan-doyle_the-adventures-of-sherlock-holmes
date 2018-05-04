@@ -11,11 +11,6 @@ b{
 	font-variant: small-caps;
 }
 
-span[epub|type~="subtitle"]{
-	display: block;
-	font-weight: normal;
-}
-
 [epub|type~="se:letter.dateline"]{
 	margin-top: 1em;
 	text-align: right;
@@ -47,11 +42,6 @@ span[epub|type~="subtitle"]{
 [epub|type~="z3998:sender"]{
 	font-variant: small-caps;
 	text-align: right;
-}
-
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-indent: 0;
 }
 
 .signature{
