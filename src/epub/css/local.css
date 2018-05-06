@@ -6,19 +6,30 @@
 	font-variant: small-caps;
 }
 
+abbr.initialism{
+	white-space: nowrap;
+}
+
+abbr.degree{
+	white-space: nowrap;
+}
+
+abbr.name{
+	white-space: nowrap;
+}
+
 b{
 	font-weight: normal;
 	font-variant: small-caps;
 }
 
+blockquote.list p{
+	text-indent: 0;
+}
+
 [epub|type~="se:letter.dateline"]{
 	margin-top: 1em;
 	text-align: right;
-}
-
-[epub|type~="z3998:letter"]{
-	margin-left: 0;
-	margin-right: 0;
 }
 
 [epub|type~="z3998:letter"] header{
@@ -40,7 +51,6 @@ b{
 }
 
 [epub|type~="z3998:sender"]{
-	font-variant: small-caps;
 	text-align: right;
 }
 
