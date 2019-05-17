@@ -26,27 +26,28 @@
 		<meta property="schema:accessibilityFeature">tableOfContents</meta>
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>
-		<link href="onix.xml" rel="onix-record"/>
+		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
 		<dc:title id="title">The Adventures of Sherlock Holmes</dc:title>
 		<meta property="file-as" refines="#title">Adventures of Sherlock Holmes, The</meta>
 		<dc:subject id="subject-1">Holmes, Sherlock (Fictitious character) -- Fiction</dc:subject>
 		<dc:subject id="subject-2">Private investigators -- England -- Fiction</dc:subject>
 		<dc:subject id="subject-3">Detective and mystery stories, English</dc:subject>
-		<meta property="meta-auth" refines="#subject-1">https://www.gutenberg.org/ebooks/1661</meta>
-		<meta property="meta-auth" refines="#subject-2">https://www.gutenberg.org/ebooks/1661</meta>
-		<meta property="meta-auth" refines="#subject-3">https://www.gutenberg.org/ebooks/1661</meta>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">Unknown</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh2008109474</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh85037269</meta>
 		<meta property="se:subject">Fiction</meta>
 		<meta property="se:subject">Mystery</meta>
 		<meta property="se:subject">Shorts</meta>
 		<meta property="se:collection">Sherlock Holmes</meta>
 		<dc:description id="description">The world’s first consulting detective investigates a variety of intriguing cases in the first Holmes short story collection.</dc:description>
-		<meta property="meta-auth" refines="#description">https://standardebooks.org</meta>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;i&gt;The Adventures of Sherlock Holmes&lt;/i&gt; was the first collection of Sherlock Holmes short stories Conan Doyle published in book form, following the popular success of the novels &lt;i&gt;A Study in Scarlet&lt;/i&gt; and &lt;i&gt;The Sign of the Four&lt;/i&gt;, which introduced the characters of Dr. John Watson and the austere analytical detective Sherlock Holmes.&lt;/p&gt;
 			&lt;p&gt;The collection contains twelve stories, all originally published in &lt;i&gt;The Strand Magazine&lt;/i&gt; between July 1891 and June 1892. Narrated by the first-person voice of Dr. Watson, they involve him and Holmes solving a series of mysterious cases.&lt;/p&gt;
 			&lt;p&gt;Some of the more well-known stories in this collection are “A Scandal in Bohemia,” in which Holmes comes up against a worthy opponent in the form of Irene Adler, whom Holmes forever after admiringly refers to as &lt;em&gt;the&lt;/em&gt; woman; “The Redheaded League,” involving a bizarre scheme offering a well-paid sinecure to redheaded men; and “The Speckled Band,” in which Holmes and Watson save a young woman from a terrible death.&lt;/p&gt;
 		</meta>
-		<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/1661</dc:source>
 		<dc:source>https://archive.org/details/adventuresofsher001892doyl</dc:source>
