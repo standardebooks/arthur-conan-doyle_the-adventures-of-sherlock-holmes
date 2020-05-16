@@ -42,7 +42,7 @@
 		<meta property="se:subject">Mystery</meta>
 		<meta property="se:subject">Shorts</meta>
 		<meta property="belongs-to-collection" id="collection-1">Sherlock Holmes</meta>
-		<meta property="collection-type" refines="collection-1">series</meta>
+		<meta property="collection-type" refines="#collection-1">series</meta>
 		<dc:description id="description">The world’s first consulting detective investigates a variety of intriguing cases in the first Holmes short story collection.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;i&gt;The Adventures of Sherlock Holmes&lt;/i&gt; was the first collection of &lt;a href="https://standardebooks.org/collections/sherlock-holmes"&gt;Sherlock Holmes&lt;/a&gt; short stories &lt;a href="https://standardebooks.org/ebooks/arthur-conan-doyle"&gt;Conan Doyle&lt;/a&gt; published in book form, following the popular success of the novels &lt;a href="https://standardebooks.org/ebooks/arthur-conan-doyle/a-study-in-scarlet"&gt;&lt;i&gt;A Study in Scarlet&lt;/i&gt;&lt;/a&gt; and &lt;a href="https://standardebooks.org/ebooks/arthur-conan-doyle/the-sign-of-the-four"&gt;&lt;i&gt;The Sign of the Four&lt;/i&gt;&lt;/a&gt;, which introduced the characters of &lt;abbr&gt;Dr.&lt;/abbr&gt; John Watson and the austere analytical detective Sherlock Holmes.&lt;/p&gt;
