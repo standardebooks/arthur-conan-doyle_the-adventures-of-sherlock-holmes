@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="the-adventure-of-the-blue-carbuncle.xhtml">
+		<ignore>
+			<code>t-007</code>
+			<reason>Possesive is part of the newspaper name.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
