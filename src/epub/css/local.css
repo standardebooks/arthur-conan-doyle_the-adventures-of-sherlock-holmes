@@ -2,14 +2,14 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 
 #the-redheaded-league blockquote:last-of-type{
-	text-align: center;
 	font-variant: small-caps;
+	text-align: center;
 }
 
 ul{
 	list-style-type: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 [epub|type~="se:letter.dateline"]{
