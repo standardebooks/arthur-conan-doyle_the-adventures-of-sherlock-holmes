@@ -67,8 +67,8 @@
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Thomas_Eakins</meta>
 		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n80061185</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="transcriber-1">An Anonymous Volunteer</dc:contributor>
-		<meta property="file-as" refines="#transcriber-1">Anonymous Volunteer, An</meta>
+		<dc:contributor id="transcriber-1">Anonymous</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Anonymous</meta>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
 		<dc:contributor id="transcriber-2">Jose Menendez</dc:contributor>
 		<meta property="file-as" refines="#transcriber-2">Menendez, Jose</meta>
