@@ -44,7 +44,7 @@
 		<meta id="collection-1" property="belongs-to-collection">Sherlock Holmes</meta>
 		<meta property="collection-type" refines="#collection-1">series</meta>
 		<meta property="group-position" refines="#collection-1">3</meta>
-		<meta id="collection-2" property="belongs-to-collection">Haycraft Queen Cornerstones</meta>
+		<meta id="collection-2" property="belongs-to-collection">Haycraft-Queen Cornerstones</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
 		<dc:description id="description">The world’s first consulting detective investigates a variety of intriguing cases in the first Holmes short story collection.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
