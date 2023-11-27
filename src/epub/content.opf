@@ -55,8 +55,8 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/1661</dc:source>
 		<dc:source>https://archive.org/details/adventuresofsher001892doyl</dc:source>
-		<meta property="se:word-count">105131</meta>
-		<meta property="se:reading-ease.flesch">80.62</meta>
+		<meta property="se:word-count">105135</meta>
+		<meta property="se:reading-ease.flesch">80.51</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/The_Adventures_of_Sherlock_Holmes</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes</meta>
 		<dc:creator id="author">Arthur Conan Doyle</dc:creator>
