@@ -34,7 +34,7 @@ jobs:
       - name: Install Standard Ebooks tools
         if: steps.cache-deps.outputs.cache-hit != 'true'
         run: |
-          pipx ensurepath
+          pipx ensurepath --force
           pipx install standardebooks
 
       - name: Add pipx bin to PATH
