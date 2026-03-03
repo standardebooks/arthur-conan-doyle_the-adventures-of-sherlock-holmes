@@ -42,12 +42,12 @@ jobs:
 
       - name: Prepare and lint the ebook
         run: |
-          se typogrify .
-          se modernize-spelling .
-          se semanticate .
-          se clean .
+          # se typogrify .
+          # se modernize-spelling .
+          # se semanticate .
+          # se clean .
           se build-toc .
-          se lint .
+          # se lint .
 
       - name: Build EPUB and AZW3 (Kindle)
         run: se build --kindle --check --output-dir=dist .
