@@ -1,0 +1,60 @@
+name: Build Standard Ebook - The Adventures of Sherlock Holmes
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository (optional if starting fresh)
+        uses: actions/checkout@v6
+
+      - name: Cache apt packages and pipx installations
+        id: cache-deps
+        uses: actions/cache@v5
+        with:
+          path: |
+            /var/cache/apt/archives
+            ~/.cache/pip
+            ~/.local/pipx/shared/virtualenvs
+            ~/.local/pipx/venvs
+          key: ${{ runner.os }}-ebook-deps-${{ hashFiles('**/*.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-ebook-deps-
+
+      - name: Install system dependencies
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y calibre default-jre git python3-dev python3-pip python3-venv pipx tree
+
+      - name: Install Standard Ebooks tools
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: |
+          pipx ensurepath
+          pipx install standardebooks
+
+      - name: Add pipx bin to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Prepare and lint the ebook
+        run: |
+          se typogrify .
+          se modernize-spelling .
+          se semanticate .
+          se clean .
+          se build-toc .
+          se lint .
+
+      - name: Build EPUB and AZW3 (Kindle)
+        run: se build --kindle --check --output-dir=dist .
+
+      - name: Upload built ebook files
+        uses: actions/upload-artifact@v7
+        with:
+          name: sherlock-holmes-ebook
+          path: dist/*
+          if-no-files-found: warn
