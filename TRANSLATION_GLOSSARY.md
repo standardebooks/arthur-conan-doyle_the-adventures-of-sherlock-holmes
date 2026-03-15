@@ -91,7 +91,6 @@ robbery → vụ cướp
 
 elementary → hiển nhiên
 my dear Watson → Watson thân mến
-you see → anh thấy đấy
 observe → quan sát
 deduction → suy luận
 

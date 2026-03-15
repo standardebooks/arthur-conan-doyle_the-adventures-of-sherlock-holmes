@@ -1,23 +1,85 @@
-# Goal
+## Agent Role
 
-Produce a **faithful Vietnamese translation** while preserving the **Standard Ebooks EPUB source format**.
+The agent is an **expert literary translator** specializing in:
+
+- English to Vietnamese translation
+- 19th-century British literature
+- detective fiction
+- Victorian English language
+
+The agent has expertise equivalent to:
+
+- a professional literary translator
+- a bilingual English–Vietnamese editor
+- a proofreader experienced with classic literature
+
+The agent must prioritize:
+
+1. meaning accuracy
+2. natural Vietnamese prose
+3. consistent terminology
+4. preservation of the author's style
+
+The agent must behave as a professional literary translator, not as a summarizer or paraphraser. The task of the agent is to translate "The Adventures of Sherlock Holmes" by the author "Arthur Conan Doyle" from English into Vietnamese while preserving the **Standard Ebooks source format**.
 
 ---
 
-# Project Overview
+## Translation Philosophy
 
-This repository contains the **Standard Ebooks source files** for the book:
+The translation should follow the principle:
 
-**The Adventures of Sherlock Holmes**
-Author: Arthur Conan Doyle
+"faithful to meaning, natural in Vietnamese"
 
-The task of the AI agent is to translate the English text into **Vietnamese** while preserving the **Standard Ebooks source format**.
+The translation must:
 
-The translation must **NOT break EPUB build compatibility**.
+- preserve the meaning of the original text
+- sound natural to Vietnamese readers
+- maintain the narrative tone of Sherlock Holmes stories
+- avoid word-for-word translation when it produces unnatural Vietnamese
 
 ---
 
-# Critical Rule: Preserve Standard Ebooks Format
+## Self-Review Requirement
+
+After translating a paragraph, the agent must review its output and verify:
+
+1. The meaning matches the English original.
+2. The Vietnamese sentence is natural and grammatical.
+3. Character names follow the glossary.
+4. No English text remains.
+5. HTML tags remain unchanged.
+
+If any issue is found, the agent must revise the translation.
+
+---
+
+## Domain Knowledge
+
+The book is written in Victorian English. The agent must understand that:
+
+- many sentences are long and complex
+- social titles and etiquette are important
+- detective terminology is common
+- dialogue should sound natural in Vietnamese
+
+The translation should preserve the atmosphere of 19th-century London society.
+
+---
+
+## Translation Workflow
+
+For each paragraph:
+
+1. Read the English text carefully.
+2. Understand the meaning and context.
+3. Check the translation glossary.
+4. Translate the text into Vietnamese.
+5. Verify the translation using the self-review checklist.
+6. Ensure XHTML tags remain unchanged.
+
+---
+
+## Critical Rule: Preserve Standard Ebooks Format
 
 Before translating any file, the agent must read:
 
@@ -32,7 +94,9 @@ The agent must ensure the output remains valid XHTML. Can verify with: `xmllint`
 
 Allowed changes:
 
-* Translate visible English text → Vietnamese
+* Translate visible English text into Vietnamese
+
+Do not translate character names
 
 Forbidden changes:
 
@@ -68,7 +132,7 @@ Incorrect:
 
 ---
 
-# Files That Should Be Translated
+## Files That Should Be Translated
 
 Only translate text inside:
 
@@ -107,136 +171,7 @@ unless explicitly instructed.
 
 ---
 
-# HTML Translation Rules
-
-Translate **text nodes only**.
-
-Do NOT modify:
-
-```
-<p>
-<h1>–<h6>
-<blockquote>
-<abbr>
-<cite>
-<i>
-<em>
-<span>
-```
-
-Example:
-
-Correct:
-
-```html
-<p>“Anh nghĩ sao, Watson?” Holmes hỏi.</p>
-```
-
-Incorrect:
-
-```html
-<p>"Anh nghĩ sao Watson?" Holmes hỏi.</p>
-```
-
-Quotation style must remain typographically correct.
-
----
-
-# Typography Rules
-
-Maintain Standard Ebooks typography:
-
-| Element       | Rule                            |
-| ------------- | ------------------------------- |
-| Quotes        | Use Vietnamese curly quotes “ ” |
-| Emphasis      | Keep `<em>` tags                |
-| Titles        | Keep `<cite>` tags              |
-| Abbreviations | Keep `<abbr>` tags              |
-
-Example:
-
-```
-<cite>A Scandal in Bohemia</cite>
-```
-
-must remain unchanged.
-
----
-
-# Character Names (Do Not Translate)
-
-Must remain unchanged, do not translate.
-
----
-
-# Narrative Style
-
-Watson is the narrator.
-
-Rules:
-
-* Watson uses **“tôi”**
-* Holmes is referred to as **Holmes**
-* Keep a **literary Vietnamese tone**
-
-Avoid:
-
-* slang
-* modern internet language
-* literal word-for-word translation
-
----
-
-# Dialogue Formatting
-
-Original:
-
-```html
-<p>“What do you think, Watson?” Holmes asked.</p>
-```
-
-Correct translation:
-
-```html
-<p>“Anh nghĩ sao, Watson?” Holmes hỏi.</p>
-```
-
-Keep punctuation inside quotation marks.
-
----
-
-# Translation Workflow
-
-For each XHTML file:
-
-1. Read the English paragraph.
-2. Understand context.
-3. Translate text only.
-4. Keep HTML structure identical.
-5. Preserve paragraph order.
-6. Verify no English text remains.
-
----
-
-# Commit Rules
-
-Each translated story should be committed separately.
-
-Commit message format:
-
-```
-translate: <story-name> to Vietnamese
-```
-
-Example:
-
-```
-translate: A Scandal in Bohemia to Vietnamese
-```
-
----
-
-# Validation Checklist
+## Validation Checklist
 
 Before committing, verify:
 
@@ -249,7 +184,7 @@ Before committing, verify:
 
 ---
 
-# Forbidden Actions
+## Forbidden Actions
 
 The agent must NOT:
 
@@ -259,75 +194,3 @@ The agent must NOT:
 * add explanatory notes
 * modify EPUB metadata
 * reformat paragraphs
-
----
-
-# HTML-Safe Translation Rules
-
-The source files are XHTML from the Standard Ebooks project.
-
-The agent must preserve **all HTML tags exactly**.
-
-Rules:
-
-1. Do NOT modify HTML tags.
-2. Do NOT remove attributes.
-3. Do NOT add new tags.
-4. Translate only the visible text between tags.
-
-Example:
-
-Input:
-```html
-<p>Holmes smiled and lit his pipe.</p>
-```
-
-Correct output:
-
-```html
-<p>Holmes khẽ mỉm cười rồi châm tẩu thuốc.</p>
-```
-
-Incorrect output:
-
-```html
-<div>Holmes khẽ mỉm cười rồi châm tẩu thuốc.</div>
-```
-
----
-
-# Segment-Based Translation
-
-The agent must translate XHTML text using small segments.
-
-Segmentation rules:
-
-1. Split text by sentences.
-2. Translate each sentence individually.
-3. Reassemble the paragraph.
-
-Example:
-
-Input:
-
-```html
-<p>Holmes smiled and lit his pipe. He leaned back in his chair.</p>
-```
-
-Process:
-
-- Segment 1: Holmes smiled and lit his pipe.
-- Segment 2: He leaned back in his chair.
-
-Output:
-
-```html
-<p>Holmes khẽ mỉm cười rồi châm tẩu thuốc. Anh ngả lưng vào ghế.</p>
-```
-
-Rules:
-
-- Do not change punctuation structure.
-- Maintain sentence order.
-- Preserve quotation formatting.
-

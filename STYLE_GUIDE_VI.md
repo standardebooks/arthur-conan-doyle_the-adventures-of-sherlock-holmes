@@ -4,18 +4,6 @@ This guide defines the tone and writing style for the Vietnamese translation.
 
 ---
 
-## Narrative Voice
-
-The narrator is Dr. Watson.
-
-Rules:
-
-- Watson refers to himself as **"tôi"**
-- Holmes is usually referred to as **Holmes**
-- The tone should resemble classic Vietnamese literature.
-
----
-
 ## Sentence Style
 
 Prefer:
@@ -57,6 +45,31 @@ Correct Vietnamese:
 
 ---
 
+## Narrative Style
+
+Watson is the narrator.
+
+Rules:
+
+* Watson uses **“tôi”**
+* Holmes is referred to as **Holmes**/**Anh ấy**
+* Keep a **literary Vietnamese tone**
+
+| English              | Vietnamese                       |
+| -------------------- | -------------------------------- |
+| I (Watson narration) | tôi                              |
+| Holmes               | Holmes                           |
+| Watson               | tôi / Watson                     |
+| he                   | anh ấy / ông ấy (depending on context) |
+
+Avoid:
+
+* slang
+* modern internet language
+* literal word-for-word translation
+
+---
+
 ## Pronouns
 
 Context-based pronouns are preferred.
@@ -64,31 +77,7 @@ Context-based pronouns are preferred.
 | Context | Recommended |
 |------|------|
 Holmes speaking to Watson | anh |
+Watson speaking to Holmes | anh |
+Watson refer to Holmes | anh |
 Watson narrating | tôi |
 polite formal conversation | ông / ngài |
-
-Avoid overly modern speech.
-
----
-
-## Punctuation
-
-Use proper Vietnamese typography:
-
-Quotes:
-
-“ … ”
-
-Comma placement should follow Vietnamese conventions.
-
----
-
-## Cultural References
-
-Do NOT localize British culture.
-
-Keep references such as:
-
-- London
-- Scotland Yard
-- Baker Street
