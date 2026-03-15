@@ -36,3 +36,7 @@ footer{
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
+
+html[lang="vi"] {
+    hyphens: none;
+}
