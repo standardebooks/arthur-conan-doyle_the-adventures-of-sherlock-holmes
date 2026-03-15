@@ -49,8 +49,8 @@ jobs:
           se build-toc .
           # se lint .
 
-      - name: Build EPUB and AZW3 (Kindle)
-        run: se build --kindle --check --output-dir=dist .
+      - name: Build EPUB
+        run: se build --output-dir=dist .
 
       - name: Upload built ebook files
         uses: actions/upload-artifact@v7
